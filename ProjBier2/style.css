@@ -290,6 +290,15 @@ tr:hover td{
     background-color: Gainsboro;
 }
 
+.estilos p {
+    font-style: italic;
+    color: #B07DFB;
+}
+
+.estilos .tabela + p {
+    margin-top: 20px;
+}
+
 
 /* ANUNCIOS */
 .anuncios {
