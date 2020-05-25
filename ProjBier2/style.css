@@ -303,6 +303,10 @@ tr:hover td{
     color: black;
 }
 
+.info3 p + p {
+    margin-top: 30px;
+}
+
 
 /* ANUNCIOS */
 .anuncios {
