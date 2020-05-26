@@ -303,12 +303,8 @@ tr:hover td{
     color: black;
 }
 
-.info3 p + p {
-    margin-top: 30px;
-}
-
-.info4 {
-    margin-top: 30px !important;
+.info3 p + img {
+    margin-top: 45px;
 }
 
 .info6 {
@@ -322,11 +318,6 @@ tr:hover td{
 
 .info7 p + p {
     margin-left: 30px;
-}
-
-h3 {
-    margin: 0;
-    padding: 0;
 }
 
 /* ANUNCIOS */
