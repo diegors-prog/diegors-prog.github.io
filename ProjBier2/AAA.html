@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ITABIER - Cervejas Artesanais</title>
+    <title>American Amber Ale</title>
     <meta charset="UTF-8">
     <meta name="description" content="Página comercial da empresa Itabier - cervejas artesanais, com informações do empreendimento e artigos com a descrição sobre cada estilo de cerveja comercializado." />
     <meta name="keywords" content="Informações, vídeos, artigos, notícias, documentos, receitas, cerveja, artesanal, gastronomia." />
@@ -184,4 +184,198 @@
             <p>ITABIER Cervejas Artesanais 2019 - 2020</p>
         </footer>
     </div>
+
+    <script>
+        /*curso java script aula 2 - variaveis e dados. Não precisa dar o tipo, é mais dinâmico. Vamos trabalhar
+        c/ strings, inteiro, float, booleanos, vetores e objetos*/
+
+        var nome = "Diego";  /*string*/
+        var idade = "31";   /*inteiro*/
+        var peso = "68.7";   /*valores decimais ou float*/
+        var humano = "true";  /*booleanos*/
+        var vagabundo = "false";  /*booleanos*/
+
+        var estudando = ['linguagem em C', 'html', 'css', 'javascript'];   /*vetores*/
+
+        var aluno = {
+            nome: estudando[3],
+            idade: 31,
+            peso: 68.7,
+            humano: true,
+            vagabundo: false
+        };  /*objetos*/
+
+        console.log(aluno);
+        console.log(aluno.nome);
+
+        /*Aula 3 - operações matemáticas. */
+
+        var x = 10, y = 5;
+
+        var resultado = x + y;        /* x *= 3 ou x += y */
+
+        console.log(resultado);
+
+        /*Aula 4 - funções. */
+
+        function soma(numero1, numero2) {
+            var result = numero1 + numero2;
+
+            return result;
+        }
+
+        var result = soma(1, 2);
+        console.log(result);
+
+        /*Aula 5 - condicionais */
+
+        /* exemplo 1 */
+        function retornaSexo(sexo) {
+            // M, F
+            // Masculino, Feminino
+
+            if (sexo === 'M') {
+                return 'Masculino';
+            } else if (sexo === 'F') {
+                return 'Feminino';
+            } else {
+                return 'Sexo inválido';
+            }
+        }
+
+        var resultado1 = retornaSexo('M');
+        console.log(resultado1);
+
+        /* exemplo 2 */
+        function retornaSexo(sexo) {
+            switch (sexo) {
+                case 'M':
+                    return 'Masculino';
+                case 'F':
+                    return 'Feminino';
+                default:
+                    return "Sexo inválido";
+            }
+        }
+
+        var resultado1 = retornaSexo('F');
+        console.log(resultado1);
+
+        /*Aula 6 - Operadores lógicos: AND, OR, NOT */
+
+        /* Exemplo 1 - AND */
+
+        var sexo = 'M', idade = 23;
+
+        if (sexo === 'M' && idade >= 18) {
+            console.log('OK');
+        }
+
+        /* Exemplo 2 - OR */
+
+        var sexo = 'M', idade = 10;
+
+        if (sexo === 'M' || idade >= 18) {
+            console.log('OK');
+        }
+
+        /* Exemplo 3 - NOT */
+
+        var sexo = 'F';
+
+        if (sexo !== 'M') {
+            console.log('OK');
+        }
+
+        /* Exemplo 4 - A - Armazenando o valor das condições em variaveis */
+        /* armazenar em outra variavel se o sexo é masculino */
+
+        var sexo = 'F';
+
+        var masculino;
+
+        if (sexo === 'M') {
+            masculino = true;
+        } else {
+            masculino = false;
+        }
+
+        console.log(masculino);
+
+        /* Exemplo 4 - B - Armazenando o valor das condições em variaveis */
+        /* a condição dentro do javascript sempre retorna um true ou um false */
+
+        var sexo = 'M';
+
+        var masculino = sexo === 'M';
+
+        console.log(masculino);
+
+        /*Aula 7 - condição ternária - aonde na mesma linha usando sinal de interrogação 
+        e dois pontos é criado uma condição simples, para verificar se uma variavel 
+        entra em uma condição simples, se não colocamos outro valor*/
+
+        /* var sexo = 'M';
+
+        if (sexo === 'M') {
+            return 'Masculino';
+        } else {
+            return 'feminino';
+        } */
+        
+        var sexo = 'M';
+
+        var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+        console.log(retorno);
+
+        /*Aula 8 - Estruturas de repetição - for, while */
+        
+        /* for */
+
+        for (var i = 0; i<= 100; i++) {
+            console.log(i);
+        }
+
+        /* while - forma errada de usar o while*/
+        
+        var j = 0;
+        while (j <= 100) {
+            console.log(j);
+
+            j++;
+        }
+
+        /* while - quando usar while?, somente quando for desconhecido quantas
+        vezes vai ser gerado o fluxo de looping*/
+
+        /* while é utilizado quando não temos controle do tamanho e de quantas 
+        interações ele irá executar */
+
+        var j = 219345872;
+        while (j > 50) {
+            console.log(j);
+
+            j /= 5;
+        }
+
+        /*Aula 9 - intervalo e timeout */
+        /* Intervalo dentro do javascript é alguma função que ela executa
+        várias vezes dentro de um intervalo */
+
+        function exibeAlgo() {
+            console.log('Hello world');
+        }
+
+        setInterval(exibeAlgo, 1000);
+
+        /* timeout vai executar apenas uma vez, porém ele vai dar um delay que podemos
+        determinar quanto tempo ele vai demorar a executar */
+
+        function exibeAlgo() {
+            console.log('Hello world');
+        }
+
+        setTimeout(exibeAlgo, 5000);
+
+    </script>
 </body>

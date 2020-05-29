@@ -324,6 +324,10 @@ tr:hover td{
     margin-left: 30px;
 }
 
+.info8 {
+    justify-content: center;
+}
+
 /* ANUNCIOS */
 .anuncios {
     grid-area: anuncios;
