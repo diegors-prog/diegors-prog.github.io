@@ -60,7 +60,7 @@ img {
 /* header */
 .header {
     grid-area: header;
-    background: linear-gradient(135deg, #8844ee, #B07DFB);
+    background: linear-gradient(135deg, #F98F15, #FFBF00);
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -224,7 +224,8 @@ p {
     padding: 30px;
     border-radius: 5px;
     box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
-    background: linear-gradient(135deg, #8844ee, #B07DFB);
+    background: linear-gradient(135deg, #F98F15, #FFBF00);
+    /*background: linear-gradient(135deg, #8844ee, #B07DFB);*/
 }
 
 .citacao p {
@@ -238,7 +239,7 @@ p {
 
 /* ESTILO TITULO */
 .titulo {
-    color: #B07DFB;
+    color: #FFBF00;
 }
 
 .titulo h1 {
@@ -292,7 +293,7 @@ tr:hover td{
 
 .estilos p {
     font-style: italic;
-    color: #B07DFB;
+    color: #FFBF00;
 }
 
 .estilos .tabela + p {
@@ -318,10 +319,15 @@ tr:hover td{
 .info7 {
     display: flex;
     justify-content: center;
+    font-size: 19px;
 }
 
-.info7 p + p {
-    margin-left: 30px;
+.info7 a {
+    color: black;
+}
+
+.info9 {
+    margin-right: 20px;
 }
 
 .info8 {
@@ -342,7 +348,7 @@ tr:hover td{
 /* FOOTER */
 .footer {
     grid-area: footer;
-    background: linear-gradient(135deg, #8844ee, #B07DFB);
+    background: linear-gradient(135deg,#F98F15 , #FFBF00);
 }
 
 .footer p {
