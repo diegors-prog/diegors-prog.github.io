@@ -360,7 +360,7 @@ tr:hover td{
 /* MODAL POP UP */
 .modal-container {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     background: rgba(0,0,0,.5);
     position: fixed;
     top: 0px;
@@ -392,8 +392,8 @@ tr:hover td{
 
 .modal {
     background: white;
-    width: 60%;
-    min-width: 300px;
+    width: 40%;
+    min-width: 260px;
     padding: 40px;
     border: 10px solid #988b7a;
     box-shadow: 0 0 0 10px white;
