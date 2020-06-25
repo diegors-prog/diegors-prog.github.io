@@ -1,3 +1,5 @@
+/* POP UP ITABIER */
+
 function iniciaModal(modalID) {
     if(localStorage.fechaModal !== modalID) {
         const modal = document.getElementById(modalID)
@@ -14,28 +16,52 @@ function iniciaModal(modalID) {
 }
 
 const produtos = document.querySelector('.selectModal')
-produtos.addEventListener('click', () => iniciaModal('modal-promocao'))
+produtos.addEventListener('click', () => iniciaModal(''))
 
-const produtos1 = document.querySelector('.selectModal1')
-produtos1.addEventListener('click', () => iniciaModal('modal-promocao'))
+document.addEventListener('scroll', () => {
+    if(window.pageYOffset > 300) {
+        iniciaModal('modal-promocao')
+    }
+})
 
-const sessionIPA = document.querySelector('.selectModal2')
-sessionIPA.addEventListener('click', () => iniciaModal('modal-promocao'))
 
-const aaa = document.querySelector('.selectModal3')
-aaa.addEventListener('click', () => iniciaModal('modal-promocao'))
+/* ANIMAÇÃO */
 
-const apa = document.querySelector('.selectModal4')
-apa.addEventListener('click', () => iniciaModal('modal-promocao'))
+const debounce = function(func, wait, immediate) {
+    let timeout
+    return function(...args) {
+        const context = this
+        const later = function () {
+            timeout = null
+            if (!immediate) func.apply(context, args)
+        }
+        const callNow = immediate && !timeout
+        clearTimeout(timeout)
+        timeout = setTimeout(later, wait)
+        if (callNow) func.apply(context, args)
+    }
+}
 
-const wheat = document.querySelector('.selectModal5')
-wheat.addEventListener('click', () => iniciaModal('modal-promocao'))
+const target = document.querySelectorAll('[data-anime]')
+const animationClass = 'animate'
 
-const belgian = document.querySelector('.selectModal6')
-belgian.addEventListener('click', () => iniciaModal('modal-promocao'))
+function animeScroll() {
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4)
+    target.forEach(function(element) {
+        if((windowTop) > element.offsetTop) {
+            element.classList.add(animationClass)
+        } else {
+            element.classList.remove(animationClass)
+        }
+        
+    })
+}
 
-const hoppy = document.querySelector('.selectModal7')
-hoppy.addEventListener('click', () => iniciaModal('modal-promocao'))
+animeScroll()
 
-const lager = document.querySelector('.selectModal8')
-lager.addEventListener('click', () => iniciaModal('modal-promocao'))
+if(target.length) {
+    window.addEventListener('scroll', debounce(function() {
+        animeScroll()
+        console.log('teste')
+    }, 200))
+}
