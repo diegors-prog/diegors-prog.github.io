@@ -27,7 +27,7 @@ document.addEventListener('scroll', () => {
 
 /* ANIMAÇÃO */
 
-const debounce = function(func, wait, immediate) {
+/*const debounce = function(func, wait, immediate) {
     let timeout
     return function(...args) {
         const context = this
@@ -64,4 +64,4 @@ if(target.length) {
         animeScroll()
         console.log('teste')
     }, 200))
-}
+}*/

@@ -425,7 +425,7 @@ tr:hover td{
     z-index: 2000;
     display: none;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
 
 .modal-container.mostrar {
@@ -478,7 +478,7 @@ tr:hover td{
 }
 
 /* ANIMAÇÃO */
-[data-anime] {
+/*[data-anime] {
     opacity: 0;
     transition: .3s;
 }
@@ -494,11 +494,11 @@ tr:hover td{
 [data-anime].animate {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
-}
+}*/
 
 /* PÁGINA SESSION IPA */
 .infoSession p + p {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 /* PÁGINA AMERICAN AMBER ALE */
@@ -509,4 +509,9 @@ tr:hover td{
 .spanInfoAAA {
     color: black;
     font-weight: bold
+}
+
+/* PÁGINA AMERICAN PALE ALE */
+.infoAPA h2 + p{
+    margin-top: 10px;
 }
