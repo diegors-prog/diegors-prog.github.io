@@ -16,7 +16,7 @@ function iniciaModal(modalID) {
 }
 
 const produtos = document.querySelector('.selectModal')
-produtos.addEventListener('click', () => iniciaModal(''))
+/*produtos.addEventListener('click', () => iniciaModal(''))*/
 
 document.addEventListener('scroll', () => {
     if(window.pageYOffset > 300) {
