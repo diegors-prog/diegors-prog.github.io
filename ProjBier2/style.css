@@ -515,3 +515,8 @@ tr:hover td{
 .infoAPA h2 + p{
     margin-top: 10px;
 }
+
+/* PÁGINA AMERICAN WHEAT ALE */
+.infoWheat p + p {
+    margin-top: 30px;
+}
