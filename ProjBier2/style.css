@@ -520,3 +520,8 @@ tr:hover td{
 .infoWheat p + p {
     margin-top: 30px;
 }
+
+/* PÁGINA HOPPY GOLDEN */
+.infoHoppy p + p {
+    margin-top: 30px;
+}
