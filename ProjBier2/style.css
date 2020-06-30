@@ -532,7 +532,6 @@ tr:hover td{
 }
 
 /* PRODUTOS */
-.infoProdutos img {
-    max-width: 400px;
+.infoProdutos{
     border: 2px solid black;
 }
