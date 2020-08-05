@@ -70,6 +70,8 @@ img {
 .loguinho {
     max-width: 200px;
     border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.35);
+    border: 1px solid black;
 }
 
 .header nav ul {
